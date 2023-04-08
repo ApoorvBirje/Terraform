@@ -1,5 +1,8 @@
 provider "aws" {
-  region = var.aws_region
+  region                   = "ap-south-1"
+  shared_config_files      = ["C:/Users/apoor/.aws/config"]
+  shared_credentials_files = ["C:/Users/apoor/.aws/credentials"]
+  profile                  = "default"
 }
 
 resource "aws_vpc" "main" {
